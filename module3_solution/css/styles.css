@@ -1,0 +1,149 @@
+body {
+  font-size: 16px;
+  /*color: #fff;
+  background-color: #61122f;*/
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: grey;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Oxygen', sans-serif;
+  /*font-family: 'Lora', serif;*/
+  color: black;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+/* Navigation bar button*/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #ffffff;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.row{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#Chicken, #Beef, #Sushi{
+  height: 300px;
+  width: 25%;
+  color: black;
+  margin-left: 80px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  padding-left:20px;
+  padding-right: 10px;
+  position: relative;
+  background-color: grey;
+  overflow: hidden;
+  float:left;
+}
+#heading-menu{
+  color: black;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px){
+  /* Header */
+  #Chicken, #Beef, #Sushi{
+    margin-left: 10px;
+    width : 30%;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #Chicken, #Beef{
+    margin-left: 40px;
+    width: 45%;
+  }
+  #Sushi{
+    margin-left: 40px;
+    width: 95%;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px){
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #nav-list {
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid #000;
+  }
+  #trying{
+    border-bottom: 2px solid #000;
+  }
+  #nav-list a {
+    color: black;
+    text-align: center;
+  }
+  #nav-list a:hover {
+    background: white;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  #Chicken, #Beef, #Sushi{
+    margin-left: 10px;
+    width: 70%;
+  }
+  /* End Header */
+
+}
